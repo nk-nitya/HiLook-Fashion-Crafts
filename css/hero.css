@@ -1,0 +1,231 @@
+/* ===================================================
+                    HERO SECTION
+=================================================== */
+.hero{
+
+    background: linear-gradient(
+        135deg,
+        #FFF9F7,
+        #FFF5F7
+    );
+
+    min-height:calc(100vh - 132px);
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+.hero-container{
+
+    display:grid;
+
+    grid-template-columns:45% 55%;
+
+    align-items:center;
+
+    gap:60px;
+
+    padding-top:40px;
+
+}
+
+/* ==========================================
+                HERO IMAGE
+========================================== */
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    height:780px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,0.10);
+
+    transition:0.4s ease;
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.02);
+
+}
+/* ===================================================
+                HERO CONTENT
+=================================================== */
+
+.hero-content{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 34px;
+
+}
+
+.hero-tag{
+
+    width: fit-content;
+
+    background: #FFE7EA;
+
+    color: var(--primary);
+
+    padding: 10px 18px;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+}
+
+.hero-content h1{
+
+    font-size: 72px;
+
+    font-weight:700;
+
+    line-height: 1.1;
+
+    font-family: "Playfair Display", serif;
+
+    color: #2F2F2F;
+
+}
+
+.hero-content h1 span{
+
+    display: block;
+
+    color: var(--primary);
+
+}
+
+.hero-content p{
+
+    max-width: 500px;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #666;
+
+}
+
+/* ===================================================
+                HERO BUTTONS
+=================================================== */
+
+.hero-buttons{
+
+    display: flex;
+
+    gap: 18px;
+
+    margin-top: 10px;
+
+}
+
+.btn-primary{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 16px 34px;
+
+    background: var(--primary);
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+}
+
+.btn-primary:hover{
+
+    transform: translateY(-3px);
+
+    background: #b81b5c;
+
+}
+
+.btn-secondary{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 16px 34px;
+
+    border: 2px solid var(--primary);
+
+    color: var(--primary);
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+}
+
+.btn-secondary:hover{
+
+    background: var(--primary);
+
+    color: white;
+
+    transform: translateY(-3px);
+
+}
+
+.btn-primary,
+.btn-secondary{
+
+    gap:10px;
+
+}
+
+.btn-primary:hover i,
+.btn-secondary:hover i{
+
+    transform:translateX(5px);
+
+}

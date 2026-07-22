@@ -1,0 +1,80 @@
+/* ===================================================
+                    TRUST SECTION
+=================================================== */
+
+.trust{
+
+    padding: 70px 0;
+
+    background: #ffffff;
+
+}
+
+.trust-container{
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 25px;
+
+}
+
+.trust-card{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding:20px 22px;
+
+    background:#fff8fa;
+
+    border-radius: 20px;
+
+    box-shadow: 0 12px 35px rgba(201, 36, 99, 0.08);
+
+    transition: .3s ease;
+
+    border: 1px solid #F8DCE6;
+}
+
+.trust-card:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(201, 36, 99, 0.15);
+
+}
+
+.trust-card i{
+
+    width:46px;
+    
+    height:46px;
+
+    color: var(--primary);
+
+}
+
+.trust-card h3{
+
+    font-size: 18px;
+
+    margin-bottom: 5px;
+
+    color: #2F2F2F;
+
+}
+
+.trust-card p{
+
+    font-size: 15px;
+
+    color: #777;
+
+    line-height: 1.6;
+
+}
