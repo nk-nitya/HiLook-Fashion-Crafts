@@ -1,0 +1,171 @@
+/* ===================================================
+                SHOP BY CATEGORY
+=================================================== */
+
+.categories{
+
+    padding:100px 0;
+
+    background:linear-gradient(
+        to bottom,
+        #FFFDFD,
+        #FFF7F9
+    );
+
+}
+
+/* ==========================================
+                SECTION HEADING
+========================================== */
+
+.section-heading{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-heading span{
+
+    display:inline-block;
+
+    color:var(--primary);
+
+    font-size:15px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:12px;
+
+}
+
+.section-heading h2{
+
+    font-size:48px;
+
+    font-family:"Playfair Display",serif;
+
+    color:#2F2F2F;
+
+}
+
+/* ==========================================
+                CATEGORY GRID
+========================================== */
+
+.category-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:40px;
+
+}
+
+/* ==========================================
+                CATEGORY CARD
+========================================== */
+
+.category-card{
+
+    display:block;
+
+    text-decoration:none;
+
+    background:#FFF8FA;
+
+    border-radius:26px;
+
+    overflow:hidden;
+
+    border:1px solid #F8DCE6;
+
+    box-shadow:0 12px 30px rgba(201,36,99,.08);
+
+    transition:.35s ease;
+
+}
+
+.category-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 22px 45px rgba(201,36,99,.15);
+
+}
+
+/* ==========================================
+                IMAGE
+========================================== */
+
+.category-card img{
+
+    width:100%;
+
+    height:230px;
+
+    display:block;
+
+    object-fit:cover;
+
+    transition:.4s ease;
+
+}
+
+.category-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================================
+                INFO
+========================================== */
+
+.category-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 24px;
+
+    background:rgba(255,255,255,.95);
+
+}
+
+.category-info h3{
+
+    color:#2F2F2F;
+
+    font-size:28px;
+
+    font-family:"Playfair Display",serif;
+
+}
+
+.category-info i{
+
+    width:26px;
+
+    height:26px;
+
+    color:var(--primary);
+
+    transition:.3s;
+
+}
+
+.category-card:hover .category-info i{
+
+    transform:translateX(8px);
+
+}
