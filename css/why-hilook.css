@@ -4,6 +4,10 @@
 
 .why-hilook{
 
+    position:relative;
+
+    overflow:hidden;
+
     padding:120px 0;
 
     background:linear-gradient(
@@ -15,6 +19,8 @@
 }
 
 .why-wrapper{
+
+    position:relative;
 
     margin-top:70px;
 
@@ -210,9 +216,9 @@
 
 }
 
-/* ==========================================
-            HANGING CHARMS
-========================================== */
+/*=====================================
+        HANGING JEWELLERY
+=====================================*/
 
 .hanging-items{
 
@@ -221,6 +227,8 @@
     inset:0;
 
     pointer-events:none;
+
+    z-index:5;
 
 }
 
@@ -234,7 +242,13 @@
 
     align-items:center;
 
-    transform-origin:top center;
+    opacity:0;
+
+    transform:translateY(-260px);
+
+    transition:
+        transform .9s cubic-bezier(.22,1,.36,1),
+        opacity .7s ease;
 
 }
 
@@ -244,11 +258,11 @@
 
     background:linear-gradient(
         to bottom,
-        #E7C97B,
-        #D4AF37
+        #D8B46A,
+        #F2D79B
     );
 
-    border-radius:10px;
+    border-radius:20px;
 
 }
 
@@ -256,79 +270,134 @@
 
     width:72px;
 
-    margin-top:8px;
+    margin-top:10px;
 
-    filter:drop-shadow(0 8px 16px rgba(0,0,0,.08));
+    filter:drop-shadow(0 10px 20px rgba(0,0,0,.12));
 
 }
 
-/* ==========================================
-        CHARM POSITIONS
-========================================== */
-
-/* Left Jewellery */
+/* Left */
 
 .hanger-1{
 
-    left:4%;
+    left:24%;
 
-    top:-140px;
+    top:-190px;
 
 }
 
 .hanger-1 .chain{
 
-    height:230px;
+    height:290px;
 
 }
 
-/* Right Dress */
+/* Left Dress */
 
 .hanger-2{
 
-    right:2%;
+    left:39%;
 
-    top:-120px;
+    top:-170px;
 
 }
 
 .hanger-2 .chain{
 
-    height:270px;
+    height:330px;
 
 }
 
-/* Bottom Left Crochet */
+/* Right Crochet */
 
 .hanger-3{
 
-    left:12%;
+    right:36%;
 
-    top:170px;
+    top:-170px;
 
 }
 
 .hanger-3 .chain{
 
-    height:150px;
+    height:300px;
 
 }
 
-/* Bottom Right Purse */
+/* Right Purse */
 
 .hanger-4{
 
-    right:8%;
+    right:20%;
 
-    top:140px;
+    top:-185px;
 
 }
 
 .hanger-4 .chain{
 
-    height:210px;
+    height:320px;
 
 }
+
+/*=====================================
+        REVEAL JEWELLERY
+=====================================*/
+
+.brand-stage:hover ~ .hanging-items .hanger{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* Hidden */
+
+.hanging-items .hanger{
+
+    opacity:0;
+
+    transform:translateY(-260px);
+
+}
+
+/* Visible */
+
+.hanging-items.show .hanger{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* Stagger */
+
+.hanger-1{
+
+    transition-delay:.05s;
+
+}
+
+.hanger-2{
+
+    transition-delay:.18s;
+
+}
+
+.hanger-3{
+
+    transition-delay:.32s;
+
+}
+
+.hanger-4{
+
+    transition-delay:.45s;
+
+}
+
 
 
 
