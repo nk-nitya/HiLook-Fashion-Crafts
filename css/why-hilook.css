@@ -329,7 +329,9 @@
 
     position:relative;
 
-    min-height:760px;
+    width:100%;
+
+    height:760px;
 
     display:flex;
 
@@ -380,18 +382,36 @@
 }
 
 /* ---------- Hanging charms ---------- */
-.charm {
-  position: absolute;
-  top: -220px;                       /* start hidden above the section */
-  left: 50%;
-  transform: translateX(-50%) translateX(var(--x)) translateY(0);
-  display: flex; flex-direction: column; align-items: center;
-  transition: transform .9s cubic-bezier(.34,1.56,.64,1),
-              opacity .5s ease;
-  opacity: 0;
-  z-index: 2;
-  transform-origin: top center;
+.charm{
+
+    position:absolute;
+
+    top:-250px;
+
+    left:50%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    opacity:0;
+
+    transform:translateY(0);
+
+    transition:
+
+        transform .9s cubic-bezier(.34,1.56,.64,1),
+
+        opacity .5s ease;
+
+    z-index:2;
+
+    transform-origin:top center;
+
 }
+
 .chain {
   width: 2px; height: 140px;
   background: linear-gradient(#f5c46a, #b8862f);
@@ -410,10 +430,92 @@
 }
 
 /* When the stage is "active" (cursor near center), charms drop into view */
-.stage.is-active .charm {
-  opacity: 1;
-  transform: translateX(-50%) translateX(var(--x)) translateY(260px);
-  transition-delay: var(--delay);
+.stage.is-active .charm{
+
+    opacity:1;
+
+    transform:translateY(260px);
+
+}
+
+/* ==========================================
+            CHARM POSITIONS
+========================================== */
+
+/* LEFT */
+
+.charm--1{
+
+    left:8%;
+
+}
+
+.charm--2{
+
+    left:24%;
+
+}
+
+.charm--3{
+
+    left:39%;
+
+}
+
+/* RIGHT */
+
+.charm--4{
+
+    left:61%;
+
+}
+
+.charm--5{
+
+    left:76%;
+
+}
+
+.charm--6{
+
+    left:91%;
+
+}
+
+.charm--1 .chain{
+
+    height:180px;
+
+}
+
+.charm--2 .chain{
+
+    height:270px;
+
+}
+
+.charm--3 .chain{
+
+    height:220px;
+
+}
+
+.charm--4 .chain{
+
+    height:300px;
+
+}
+
+.charm--5 .chain{
+
+    height:210px;
+
+}
+
+.charm--6 .chain{
+
+    height:250px;
+
 }
 
 /* Gentle swing */
