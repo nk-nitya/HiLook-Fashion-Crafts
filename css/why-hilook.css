@@ -286,15 +286,19 @@
 
 .feature-icon{
 
-    width:52px;
+    margin-bottom:18px;
 
-    height:52px;
+}
 
-    border-radius:16px;
+.feature-icon i{
 
-    background:#FFF1F6;
+    width:28px;
 
-    font-size:24px;
+    height:28px;
+
+    color:#C92463;
+
+    stroke-width:1.8;
 
 }
 
@@ -322,7 +326,7 @@
 
 }
 
-.feature-heart { position: absolute; bottom: 10px; right: 14px; color: #e0407a; font-size: 12px; }
+
 
 /* ---------- Center stage ---------- */
 .stage{
@@ -333,11 +337,7 @@
 
     height:760px;
 
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
+    overflow:visible;
 
 }
 
@@ -347,15 +347,15 @@
 
 .center-logo{
 
-    position:relative;
+    position:absolute;
 
-    z-index:5;
+    left:50%;
 
-    display:flex;
+    top:54%;
 
-    justify-content:center;
+    transform:translate(-50%,-50%);
 
-    align-items:center;
+    z-index:20;
 
 }
 
@@ -363,15 +363,15 @@
 
     width:360px;
 
-    position:relative;
-
-    z-index:20;
+    display:block;
 
     filter:
 
         drop-shadow(0 30px 60px rgba(0,0,0,.08))
 
         drop-shadow(0 0 20px rgba(255,255,255,.35));
+
+    transition:.4s ease;
 
 }
 
@@ -382,13 +382,12 @@
 }
 
 /* ---------- Hanging charms ---------- */
+/* ==========================================
+            HANGING CHARM
+========================================== */
 .charm{
 
     position:absolute;
-
-    top:-250px;
-
-    left:50%;
 
     display:flex;
 
@@ -398,36 +397,175 @@
 
     opacity:0;
 
-    transform:translateY(0);
+    transform:translateY(-220px);
 
     transition:
 
-        transform .9s cubic-bezier(.34,1.56,.64,1),
+        opacity .55s ease,
 
-        opacity .5s ease;
-
-    z-index:2;
+        transform .9s cubic-bezier(.22,1,.36,1);
 
     transform-origin:top center;
 
+    z-index:10;
+
+}
+/* ==========================================
+                GOLD CHAIN
+========================================== */
+
+.chain{
+
+    width:2px;
+
+    height:180px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+
+        to bottom,
+
+        #F8E6A4,
+
+        #D8AF52,
+
+        #B88928
+
+    );
+
+    box-shadow:
+
+        0 0 4px rgba(216,175,82,.35);
+
 }
 
-.chain {
-  width: 2px; height: 140px;
-  background: linear-gradient(#f5c46a, #b8862f);
-  box-shadow: 0 0 4px rgba(184,134,47,.4);
-  border-radius: 2px;
-}
 .chain--short { height: 90px; }
 .chain--long  { height: 180px; }
 
-.charm-img {
-  width: 78px; height: auto;
-  filter: drop-shadow(0 8px 12px rgba(120, 30, 60, .25));
-  animation: swing 3.2s ease-in-out infinite;
-  transform-origin: top center;
-  animation-delay: var(--delay);
+/* ==========================================
+                CHARM IMAGE
+========================================== */
+
+.charm-img{
+
+    display:block;
+
+    height:auto;
+
+    object-fit:contain;
+
+    transform-origin:top center;
+
+    filter:
+
+        drop-shadow(0 12px 18px rgba(0,0,0,.12));
+
+    animation:
+
+        swing 4s ease-in-out infinite;
+
 }
+
+/* ==========================================
+        FINAL CHARM LAYOUT
+========================================== */
+
+/* Earrings */
+
+.charm--1{
+    left:16%;
+    top:-165px;
+}
+
+.charm--1 .chain{
+    height:145px;
+}
+
+.charm--1 .charm-img{
+    width:55px;
+}
+
+
+/* Necklace (Hero) */
+
+.charm--2{
+    left:31%;
+    top:-300px;
+}
+
+.charm--2 .chain{
+    height:255px;
+}
+
+.charm--2 .charm-img{
+    width:115px;
+}
+
+
+/* Dress */
+
+.charm--3{
+    left:43%;
+    top:-195px;
+}
+
+.charm--3 .chain{
+    height:165px;
+}
+
+.charm--3 .charm-img{
+    width:82px;
+}
+
+
+/* Purse */
+
+.charm--4{
+    left:64%;
+    top:-285px;
+}
+
+.charm--4 .chain{
+    height:245px;
+}
+
+.charm--4 .charm-img{
+    width:68px;
+}
+
+
+/* Flower */
+
+.charm--5{
+    left:76%;
+    top:-190px;
+}
+
+.charm--5 .chain{
+    height:170px;
+}
+
+.charm--5 .charm-img{
+    width:58px;
+}
+
+
+/* Pink Drop */
+
+.charm--6{
+    left:87%;
+    top:-235px;
+}
+
+.charm--6 .chain{
+    height:205px;
+}
+
+.charm--6 .charm-img{
+    width:52px;
+}
+
 
 /* When the stage is "active" (cursor near center), charms drop into view */
 .stage.is-active .charm{
@@ -438,90 +576,26 @@
 
 }
 
-/* ==========================================
-            CHARM POSITIONS
-========================================== */
-
-/* LEFT */
-
-.charm--1{
-
-    left:8%;
-
-}
-
-.charm--2{
-
-    left:24%;
-
-}
-
-.charm--3{
-
-    left:39%;
-
-}
-
-/* RIGHT */
-
-.charm--4{
-
-    left:61%;
-
-}
-
-.charm--5{
-
-    left:76%;
-
-}
-
-.charm--6{
-
-    left:91%;
-
-}
-
-.charm--1 .chain{
-
-    height:180px;
-
-}
-
-.charm--2 .chain{
-
-    height:270px;
-
-}
-
-.charm--3 .chain{
-
-    height:220px;
-
-}
-
-.charm--4 .chain{
-
-    height:300px;
-
-}
-
-.charm--5 .chain{
-
-    height:210px;
-
-}
-
-.charm--6 .chain{
-
-    height:250px;
-
-}
 
 /* Gentle swing */
-@keyframes swing {
-  0%,100% { transform: rotate(-4deg); }
-  50%     { transform: rotate(4deg); }
+@keyframes swing{
+
+    0%,100%{
+
+        transform:
+            rotate(-4deg)
+            translateX(-2px);
+
+    }
+
+    50%{
+
+        transform:
+            rotate(4deg)
+            translateX(2px);
+
+    }
+
 }
 
 /* ---------- Responsive ---------- */
