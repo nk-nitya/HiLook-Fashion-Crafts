@@ -61,19 +61,12 @@
 =================================================== */
 
 .footer-brand img{
-
-    width:210px;
-
-    margin-bottom:28px;
-
-    transition:.4s;
-
+    width:180px;
+    transition:.4s ease;
 }
 
 .footer-brand img:hover{
-
     transform:scale(1.05);
-
 }
 
 .footer-brand p{
@@ -150,17 +143,6 @@
 
 .footer-links h3,
 
-.footer-contact h3{
-
-    font-family:"Playfair Display",serif;
-
-    font-size:24px;
-
-    margin-bottom:25px;
-
-    color:#2F2F2F;
-
-}
 
 .footer-links{
 
@@ -173,69 +155,54 @@
 }
 
 .footer-links a{
-
-    text-decoration:none;
-
+    display:block;
+    width:fit-content;
+    margin-bottom:14px;
     color:#666;
+    text-decoration:none;
+    transition:.3s ease;
+    position:relative;
+}
 
-    transition:.3s;
-
+.footer-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-3px;
+    width:0;
+    height:2px;
+    background:#C92463;
+    transition:.35s ease;
 }
 
 .footer-links a:hover{
-
     color:#C92463;
+    transform:translateX(6px);
+}
 
-    padding-left:6px;
-
+.footer-links a:hover::after{
+    width:100%;
 }
 
 /* ===================================================
                     CONTACT
 =================================================== */
-
-.footer-contact{
-
+.footer-contact a{
     display:flex;
-
-    flex-direction:column;
-
-    gap:18px;
-
-    background:white;
-
-    padding:28px;
-
-    border-radius:24px;
-
-    box-shadow:0 18px 45px rgba(0,0,0,.05);
-
-}
-
-.footer-contact p{
-
-    display:flex;
-
     align-items:center;
-
     gap:12px;
-
-    color:#666;
-
-    line-height:1.7;
-
 }
 
 .footer-contact i{
-
     width:18px;
-
     height:18px;
-
-    color:#C92463;
-
+    color:#6b6b6b;
+    flex-shrink:0;
 }
 
+.footer-contact a:hover i{
+    color:#C92463;
+}
 /* ===================================================
                 BOTTOM
 =================================================== */
@@ -307,17 +274,13 @@
 }
 
 .payment-icons img{
-
-    height:28px;
-
-    transition:.3s;
-
+    height:18px;
+    transition:.3s ease;
+    cursor:pointer;
 }
 
 .payment-icons img:hover{
-
-    transform:translateY(-4px);
-
+    transform:translateY(-4px) scale(1.08);
 }
 
 .footer-trust{

@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop | HI-LOOK Fashion & Crafts</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/shop.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ================= TOP BAR ================= -->
+
+        <div class="top-bar">
+
+            <div class="container top-bar-content">
+
+                <div class="top-left">
+
+                    <span>
+                        <i data-lucide="phone"></i>
+                        +91 98719 61864
+                    </span>
+
+                </div>
+
+                <div class="top-center">
+
+                    <span>
+                        Crafted with Love, Handled with Care ❤️
+                    </span>
+
+                </div>
+
+                <div class="top-right">
+
+                    <span>
+                        <i data-lucide="map-pin"></i>
+                        Meerut, Uttar Pradesh
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= NAVBAR ================= -->
+
+        <nav class="navbar">
+
+            <div class="container navbar-container">
+
+                <!-- Logo -->
+
+                <div class="logo">
+
+                    <a href="index.html">
+
+                        <img src="./assets/branding/logo.jpeg"
+                            alt="Hi-Look Fashion & Crafts">
+
+                    </a>
+
+                </div>
+
+                            <!-- Navigation -->
+
+                <ul class="nav-links">
+
+                    <li>
+
+                        <a href="#">Home</a>
+
+                    </li>
+
+                    <li class="dropdown">
+
+                        <a href="#">
+
+                            Shop
+
+                            <i data-lucide="chevron-down"></i>
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a href="#">Jewellery</a></li>
+
+                            <li><a href="#">Sarees</a></li>
+
+                            <li><a href="#">Kurti Sets</a></li>
+
+                            <li><a href="#">Co-ord Sets</a></li>
+
+                            <li><a href="#">Purses</a></li>
+
+                            <li><a href="#">Crochet Garments</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">New Arrivals</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">Our Story</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">Contact</a>
+
+                    </li>
+
+                </ul>
+
+                            <!-- Search + Icons -->
+
+                <div class="nav-right">
+
+                    <!-- Search -->
+
+                    <div class="search-box">
+
+                        <input
+                            type="text"
+                            placeholder="Search products...">
+
+                        <button aria-label="Search">
+
+                            <i data-lucide="search"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Icons -->
+
+                    <div class="nav-icons">
+
+                        <a href="#" aria-label="Wishlist">
+
+                            <i data-lucide="heart"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="Shopping Bag">
+
+                            <i data-lucide="shopping-bag"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="Account">
+
+                            <i data-lucide="user"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+
+    <!-- ========= SHOP PAGE ========= -->
+
+    <main class="shop-page">
+
+        <!-- ==========================
+                SHOP HERO
+        =========================== -->
+
+        <section class="shop-hero">
+
+            <div class="container">
+
+                <div class="breadcrumb">
+
+                    <a href="index.html">Home</a>
+
+                    <span>/</span>
+
+                    <span>Shop</span>
+
+                </div>
+
+                <div class="shop-hero-content">
+
+                    <span class="section-tag">EXPLORE COLLECTION</span>
+
+                    <h1>Find Your Perfect Style</h1>
+
+                    <p>
+                        Discover handcrafted crochet, elegant jewellery,
+                        timeless sarees, premium co-ord sets and curated
+                        fashion made with love.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================================
+                    SHOP LAYOUT
+        ========================================== -->
+
+        <section class="shop-section">
+
+            <div class="container">
+
+                <div class="shop-layout">
+
+                    <!-- Sidebar -->
+
+                    <aside class="shop-sidebar">
+
+                        <h3>Filters</h3>
+
+                        <div class="filter-group">
+
+                            <h4>Categories</h4>
+
+                            <label><input type="checkbox"> Jewellery</label>
+                            <label><input type="checkbox"> Sarees</label>
+                            <label><input type="checkbox"> Kurti Sets</label>
+                            <label><input type="checkbox"> Co-ord Sets</label>
+                            <label><input type="checkbox"> Crochet</label>
+                            <label><input type="checkbox"> Purses</label>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <h4>Price</h4>
+
+                            <label><input type="checkbox"> Under ₹999</label>
+                            <label><input type="checkbox"> ₹1000–₹1999</label>
+                            <label><input type="checkbox"> ₹2000–₹2999</label>
+                            <label><input type="checkbox"> Above ₹3000</label>
+
+                        </div>
+
+                        <div class="filter-group">
+
+                            <h4>Availability</h4>
+
+                            <label><input type="checkbox"> In Stock</label>
+                            <label><input type="checkbox"> New Arrival</label>
+
+                        </div>
+
+                    </aside>
+
+                    <!-- Products -->
+
+                    <div class="shop-content">
+
+                        <div class="shop-toolbar">
+
+                            <p>Showing <strong>24</strong> Products</p>
+
+                            <select>
+
+                                <option>Featured</option>
+                                <option>Newest</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                                <option>Best Selling</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="products-grid">
+
+                            <!-- Product 1 -->
+
+                            <div class="product-card">
+
+                                <div class="product-image">
+
+                                    <img src="assets/shop/product1.jpg" alt="Floral Kurti Set">
+
+                                    <span class="product-badge">New</span>
+
+                                    <button class="wishlist-btn">
+                                        <i data-lucide="heart"></i>
+                                    </button>
+
+                                    <div class="product-overlay">
+
+                                        <a href="#" class="view-details">
+                                            View Details →
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="product-info">
+
+                                    <h3>Floral Kurti Set</h3>
+
+                                    <p class="product-desc">
+                                        Soft floral cotton kurti with matching dupatta.
+                                    </p>
+
+                                    <div class="product-rating">
+                                        ★★★★★ <span>No reviews yet</span>
+                                    </div>
+
+                                    <div class="price">
+                                        ₹1,499
+                                    </div>
+
+                                    <button class="cart-btn">
+                                        <i data-lucide="shopping-bag"></i>
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Product 2 -->
+
+                            <div class="product-card">
+
+                                <div class="product-image">
+
+                                    <img src="assets/shop/product2.jpg" alt="Floral Saree">
+
+                                    <span class="product-badge">Best Seller</span>
+
+                                    <button class="wishlist-btn">
+                                        <i data-lucide="heart"></i>
+                                    </button>
+
+                                    <div class="product-overlay">
+
+                                        <a href="#" class="view-details">
+                                            View Details →
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="product-info">
+
+                                    <h3>Floral Saree</h3>
+
+                                    <p class="product-desc">
+                                        Elegant floral saree crafted for timeless occasions.
+                                    </p>
+
+                                    <div class="product-rating">
+                                        ★★★★★ <span>No reviews yet</span>
+                                    </div>
+
+                                    <div class="price">
+                                        ₹2,499
+                                    </div>
+
+                                    <button class="cart-btn">
+                                        <i data-lucide="shopping-bag"></i>
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Product 3 -->
+
+                            <div class="product-card">
+
+                                <div class="product-image">
+
+                                    <img src="assets/shop/product3.jpg" alt="Pearl Clutch">
+
+                                    <span class="product-badge">Trending</span>
+
+                                    <button class="wishlist-btn">
+                                        <i data-lucide="heart"></i>
+                                    </button>
+
+                                    <div class="product-overlay">
+
+                                        <a href="#" class="view-details">
+                                            View Details →
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="product-info">
+
+                                    <h3>Pearl Clutch</h3>
+
+                                    <p class="product-desc">
+                                        Handcrafted pearl clutch for elegant evenings.
+                                    </p>
+
+                                    <div class="product-rating">
+                                        ★★★★★ <span>No reviews yet</span>
+                                    </div>
+
+                                    <div class="price">
+                                        ₹1,899
+                                    </div>
+
+                                    <button class="cart-btn">
+                                        <i data-lucide="shopping-bag"></i>
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Product 4 -->
+
+                            <div class="product-card">
+
+                                <div class="product-image">
+
+                                    <img src="assets/shop/product4.jpg" alt="Crochet Cardigan">
+
+                                    <span class="product-badge">Limited</span>
+
+                                    <button class="wishlist-btn">
+                                        <i data-lucide="heart"></i>
+                                    </button>
+
+                                    <div class="product-overlay">
+
+                                        <a href="#" class="view-details">
+                                            View Details →
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="product-info">
+
+                                    <h3>Crochet Cardigan</h3>
+
+                                    <p class="product-desc">
+                                        Cozy handcrafted crochet cardigan for every season.
+                                    </p>
+
+                                    <div class="product-rating">
+                                        ★★★★★ <span>No reviews yet</span>
+                                    </div>
+
+                                    <div class="price">
+                                        ₹1,699
+                                    </div>
+
+                                    <button class="cart-btn">
+                                        <i data-lucide="shopping-bag"></i>
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Product 5 -->
+
+                            <div class="product-card">
+
+                                <div class="product-image">
+
+                                    <img src="assets/shop/product1.jpg" alt="Floral Kurti Set">
+
+                                    <span class="product-badge">New</span>
+
+                                    <button class="wishlist-btn">
+                                        <i data-lucide="heart"></i>
+                                    </button>
+
+                                    <div class="product-overlay">
+
+                                        <a href="#" class="view-details">
+                                            View Details →
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="product-info">
+
+                                    <h3>Floral Kurti Set</h3>
+
+                                    <p class="product-desc">
+                                        Soft floral cotton kurti with matching dupatta.
+                                    </p>
+
+                                    <div class="product-rating">
+                                        ★★★★★ <span>No reviews yet</span>
+                                    </div>
+
+                                    <div class="price">₹1,499</div>
+
+                                    <button class="cart-btn">
+                                        <i data-lucide="shopping-bag"></i>
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Product 6 -->
+
+                            <div class="product-card">
+
+                                <div class="product-image">
+
+                                    <img src="assets/shop/product2.jpg" alt="Floral Saree">
+
+                                    <span class="product-badge">Best Seller</span>
+
+                                    <button class="wishlist-btn">
+                                        <i data-lucide="heart"></i>
+                                    </button>
+
+                                    <div class="product-overlay">
+
+                                        <a href="#" class="view-details">
+                                            View Details →
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="product-info">
+
+                                    <h3>Floral Saree</h3>
+
+                                    <p class="product-desc">
+                                        Elegant floral saree crafted for timeless occasions.
+                                    </p>
+
+                                    <div class="product-rating">
+                                        ★★★★★ <span>No reviews yet</span>
+                                    </div>
+
+                                    <div class="price">₹2,499</div>
+
+                                    <button class="cart-btn">
+                                        <i data-lucide="shopping-bag"></i>
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Product 7 -->
+
+                            <div class="product-card">
+
+                                <div class="product-image">
+
+                                    <img src="assets/shop/product3.jpg" alt="Pearl Clutch">
+
+                                    <span class="product-badge">Trending</span>
+
+                                    <button class="wishlist-btn">
+                                        <i data-lucide="heart"></i>
+                                    </button>
+
+                                    <div class="product-overlay">
+
+                                        <a href="#" class="view-details">
+                                            View Details →
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="product-info">
+
+                                    <h3>Pearl Clutch</h3>
+
+                                    <p class="product-desc">
+                                        Handcrafted pearl clutch for elegant evenings.
+                                    </p>
+
+                                    <div class="product-rating">
+                                        ★★★★★ <span>No reviews yet</span>
+                                    </div>
+
+                                    <div class="price">₹1,899</div>
+
+                                    <button class="cart-btn">
+                                        <i data-lucide="shopping-bag"></i>
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Product 8 -->
+
+                            <div class="product-card">
+
+                                <div class="product-image">
+
+                                    <img src="assets/shop/product4.jpg" alt="Crochet Cardigan">
+
+                                    <span class="product-badge">Limited</span>
+
+                                    <button class="wishlist-btn">
+                                        <i data-lucide="heart"></i>
+                                    </button>
+
+                                    <div class="product-overlay">
+
+                                        <a href="#" class="view-details">
+                                            View Details →
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="product-info">
+
+                                    <h3>Crochet Cardigan</h3>
+
+                                    <p class="product-desc">
+                                        Cozy handcrafted crochet cardigan for every season.
+                                    </p>
+
+                                    <div class="product-rating">
+                                        ★★★★★ <span>No reviews yet</span>
+                                    </div>
+
+                                    <div class="price">₹1,699</div>
+
+                                    <button class="cart-btn">
+                                        <i data-lucide="shopping-bag"></i>
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ========= FOOTER ========= -->
+    <footer class="footer">
+
+            <div class="container">
+
+                <div class="footer-grid">
+
+                    <!-- Brand -->
+                    <div class="footer-brand">
+
+                        <img src="./assets/branding/logo.jpeg" alt="HI-LOOK Logo">
+
+                        <p>
+                            Crafted with love, styled with elegance.
+                            Discover timeless fashion, handcrafted crochet
+                            and premium jewellery designed for every occasion.
+                        </p>
+
+                        <div class="footer-social">
+
+                            <a href="#"><i data-lucide="instagram"></i></a>
+                            <a href="#"><i data-lucide="facebook"></i></a>
+                            <a href="#"><i data-lucide="youtube"></i></a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Shop -->
+                    <div class="footer-links">
+
+                        <h3>Shop</h3>
+
+                        <a href="#">Jewellery</a>
+                        <a href="#">Sarees</a>
+                        <a href="#">Kurti Sets</a>
+                        <a href="#">Co-ord Sets</a>
+                        <a href="#">Crochet</a>
+                        <a href="#">Purses</a>
+
+                    </div>
+
+                    <!-- Company -->
+                    <div class="footer-links">
+
+                        <h3>Company</h3>
+
+                        <a href="#">About Us</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Shipping Policy</a>
+                        <a href="#">Return Policy</a>
+
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="footer-links footer-contact">
+
+                        <h3>Contact</h3>
+
+                        <a href="#">
+                            <i data-lucide="map-pin"></i>
+                            Meerut, Uttar Pradesh
+                        </a>
+
+                        <a href="tel:+91XXXXXXXXXX">
+                            <i data-lucide="phone"></i>
+                            +91 XXXXX XXXXX
+                        </a>
+
+                        <a href="mailto:support@hilookfashion.com">
+                            <i data-lucide="mail"></i>
+                            support@hilookfashion.com
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <hr class="footer-divider">
+
+                <!-- Payments & Trust -->
+                <div class="footer-extra">
+
+                    <div class="footer-payment">
+
+                        <span>Accepted Payments</span>
+
+                        <div class="payment-icons">
+
+                            <img src="assets/icons/visa.svg" alt="Visa">
+                            <img src="assets/icons/mastercard.svg" alt="Mastercard">
+                            <img src="assets/icons/rupay.svg" alt="RuPay">
+                            <img src="assets/icons/upi.svg" alt="UPI">
+
+                        </div>
+
+                    </div>
+
+                    <div class="footer-trust">
+
+                        <div>
+                            <i data-lucide="shield-check"></i>
+                            Secure Payments
+                        </div>
+
+                        <div>
+                            <i data-lucide="truck"></i>
+                            PAN India Delivery
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Divider -->
+                <hr class="footer-divider">
+
+                <!-- Copyright -->
+                <div class="footer-bottom">
+
+                    <p>© 2026 HI-LOOK Fashion & Crafts. All Rights Reserved.</p>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+    <script src="./js/shop.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>
